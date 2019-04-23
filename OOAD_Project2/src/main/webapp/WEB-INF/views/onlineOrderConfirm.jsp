@@ -12,7 +12,10 @@
 <title>Yayy!</title>
 </head>
 <body>
- Your order is confirmed here.
+<div class="container active">
+ 	<h3>Stay tuned <b>${name}</b> "the foodie". </h3></h3><br/> 
+ 	<h3>Your food is being prepared and will be delivered shortly to the address: <b>${address}</b> </h3>
+ </div>
 </body>
 </html>
 
