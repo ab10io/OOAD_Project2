@@ -105,11 +105,5 @@ public class ReviewsController {
 
         return "login";
     }
-	
-	// GET menu
-	@RequestMapping(value = "/menu", method = RequestMethod.GET)
-	public String getMenu() {
-		return "menu";
-	}
 
 }
