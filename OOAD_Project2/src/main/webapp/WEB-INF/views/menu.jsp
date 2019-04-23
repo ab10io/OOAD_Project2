@@ -3,100 +3,69 @@
 
 <div class="container">
   <div class="group-header">
-    <span>12 oz.</span>
-    <span>34 oz.</span>
-  </div>
-  <br>
-  <h3>
-    <span>Fancy Food Item</span>
-    <span>..............................................................................................</span>
-    <span>25</span>
-    <span>56</span>
-  </h3>
-  <p>A well-written, appetite inspiring description that aims to inform the information and food deprived consumer</p>
-  <h3>
-    <span>Fancy Food Item</span>
-    <span>..............................................................................................</span>
-    <span>25</span>
-    <span>56</span>
-  </h3>
-  <p>A well-written, appetite inspiring description that aims to inform the information and food deprived consumer</p>
-  <h3>
-    <span>Fancy Food Item</span>
-    <span>..............................................................................................</span>
-    <span>25</span>
-    <span>56</span>
-  </h3>
-  <p>A well-written, appetite inspiring description that aims to inform the information and food deprived consumer</p>
+  
+<ul class="list-group">
+  <li class="list-group-item"><p>Dish-1</p> 
+  		<p>Description</p>
+		<div class="dropdown">
+	  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" name="dish1" 
+	  	data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Quantity </button>
+		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		    <a class="dropdown-item" href="#">1</a>
+		    <a class="dropdown-item" href="#">2</a>
+		    <a class="dropdown-item" href="#">3</a>
+		  </div>
+		</div>
+	</li>
+  <li class="list-group-item"><p>Dish-2</p>
+  <p>Description</p>
+  <div class="dropdown">
+	  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" name="dish2"
+	  	data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Quantity </button>
+		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		    <a class="dropdown-item" href="#">1</a>
+		    <a class="dropdown-item" href="#">2</a>
+		    <a class="dropdown-item" href="#">3</a>
+		  </div>
+		</div>
+		</li>
+  <li class="list-group-item"><p>Dish-3</p>
+  <p>Description</p>
+		<div class="dropdown">
+	  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" name="dish3"
+	  	data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Quantity </button>
+		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		    <a class="dropdown-item" href="#">1</a>
+		    <a class="dropdown-item" href="#">2</a>
+		    <a class="dropdown-item" href="#">3</a>
+		  </div>
+		</div>  
+  </li>
+  <li class="list-group-item"><p>Dish-4</p>
+  <p>Description</p>
+  	<div class="dropdown">
+	  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" name="dish4"
+	  	data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Quantity </button>
+		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		    <a class="dropdown-item" href="#">1</a>
+		    <a class="dropdown-item" href="#">2</a>
+		    <a class="dropdown-item" href="#">3</a>
+		  </div>
+		</div>  
+  </li>
+  <li class="list-group-item"><p>Dish-5</p>
+  <p>Description</p>
+  		<div class="dropdown">
+	  	<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" name="dish5"
+	  	data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Quantity </button>
+		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		    <a class="dropdown-item" href="#">1</a>
+		    <a class="dropdown-item" href="#">2</a>
+		    <a class="dropdown-item" href="#">3</a>
+		  </div>
+		</div>
+  </li>
+</ul>
+   
 </div>
-
-<style>
-*, *:after, *:before {
-  box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-// clear all the things
-@mixin clearfix() {
-  &:after, &:before {
-    display: table;
-    content: " ";
-    line-height: 0;
-    font-size: 0;
-    clear: both; 
-  }
-}
-
-// a little scaffolding...
-.container {
-  @include clearfix;
-  width: 50%;
-  margin: 1em auto;
-  border: 1px solid #ddd;
-  padding: .3em .6em;
-  p {
-    font-size: .9em;
-    color: #777;
-    margin-bottom: 1.5em;
-    font-style: italic;
-  }
-}
-
-.group-header {
-  float: right;
-  font-weight: 700;
-  width: 20%;
-  margin: .7em 0 1em 0;
-  span {
-    float: left;
-    width: 50%;
-    text-align: center;
-    display: block;
-  }
-}
-
-h3 {
-  @include clearfix;
-  position: relative;
-  font-weight: 700;
-  margin: .7em 0 1em 0;
-  span {
-    float: left;
-    width: 10%;
-    text-align: center;
-    display: block;
-    &:first-child {
-      width: 40%;
-      text-align: left;
-    }
-  }
-  .dots {
-    width: 40%;
-    border-bottom: 2px dotted #ccc;
-    margin-top: .8em;
-  }
-}
-
-</style>
-
 <%@ include file="commonCode/footer.jspf"%>
