@@ -13,18 +13,16 @@ import org.springframework.util.AntPathMatcher;
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 	@Autowired
-	public void configureGlobalSecurity(AuthenticationManagerBuilder auth)
-			throws Exception {
-		auth.inMemoryAuthentication().withUser("abhinav").password("dummy")
-				.roles("USER", "ADMIN");
-		auth.inMemoryAuthentication().withUser("sravanth").password("dummy")
-		.roles("USER");
+	public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception {
+		auth.inMemoryAuthentication().withUser("abhinav").password("dummy").roles("USER", "ADMIN");
+		auth.inMemoryAuthentication().withUser("sravanth").password("dummy").roles("USER");
 	}
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests().antMatchers("/", "/*reviews*/**").access("hasRole('USER')").antMatchers("/menu").permitAll().and()
-				.formLogin().loginPage("/login").permitAll();
+		http.authorizeRequests().antMatchers("/", "/*reviews*/**").access("hasRole('USER')").
+				antMatchers("/menu").permitAll().antMatchers("/employee").access("hasRole('ADMIN')").and()
+				.formLogin().loginPage("/login").permitAll().and().exceptionHandling().accessDeniedPage("/Access_Denied");;
 		
 		http.csrf().disable();
 	}
