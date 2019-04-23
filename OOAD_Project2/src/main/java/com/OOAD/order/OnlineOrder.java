@@ -12,5 +12,10 @@ public class OnlineOrder {
     public String onlineOrder(ModelMap model) {
         return "onlineOrder";
     }
+	
+	@RequestMapping(value = "/onlineOrder", method = RequestMethod.POST)
+    public String onlineOrderConfirm(ModelMap model) {
+        return "onlineOrderConfirm";
+    }
 
 }
