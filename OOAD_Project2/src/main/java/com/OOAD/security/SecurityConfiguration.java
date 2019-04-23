@@ -21,7 +21,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests().antMatchers("/", "/*reviews*/**").access("hasRole('USER')").
-				antMatchers("/menu").permitAll().antMatchers("/employee").access("hasRole('ADMIN')").and()
+			antMatchers("/menu").permitAll().antMatchers("/employee").access("hasRole('ADMIN')").and()
 				.formLogin().loginPage("/login").permitAll().and().exceptionHandling().accessDeniedPage("/Access_Denied");;
 		
 		http.csrf().disable();

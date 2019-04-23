@@ -3,7 +3,7 @@
 
 <div class="container group-header">
   
-	<form class="form-inline method="POST" action="/makeOrder">
+	<form method="POST" action="/menu" class="form-inline">
 	  <p>
 	  <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Dish 1</label>
             <span></span>

@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+ Order Confirmed!</br>
 </body>
 </html>
