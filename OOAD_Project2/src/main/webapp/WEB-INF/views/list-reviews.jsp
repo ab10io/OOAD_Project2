@@ -1,5 +1,5 @@
-<%@ include file="common/header.jspf"%>
-<%@ include file="common/navigation.jspf"%>
+<%@ include file="commonCode/header.jspf"%>
+<%@ include file="commonCode/navigation.jspf"%>
 
 <div class="container">
 	<table class="table table-striped">
@@ -31,4 +31,4 @@
 		<a type="button" class="btn btn-success" href="/add-reviews">Add</a>
 	</div>
 </div>
-<%@ include file="common/footer.jspf"%>
+<%@ include file="commonCode/footer.jspf"%>

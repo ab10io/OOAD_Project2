@@ -1,7 +1,7 @@
-<%@ include file="common/header.jspf"%>
-<%@ include file="common/navigation.jspf"%>
+<%@ include file="commonCode/header.jspf"%>
+<%@ include file="commonCode/navigation.jspf"%>
 <div class="container">
-	Welcome ${name}. You are now authenticated.
+	Welcome ${name}. You can now book your order.
 </div>
 
-<%@ include file="common/footer.jspf"%>
+<%@ include file="commonCode/footer.jspf"%>

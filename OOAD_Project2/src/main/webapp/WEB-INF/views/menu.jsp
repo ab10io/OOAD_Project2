@@ -1,5 +1,5 @@
-<%@ include file="common/header.jspf"%>
-<%@ include file="common/navigation.jspf"%>
+<%@ include file="commonCode/header.jspf"%>
+<%@ include file="commonCode/navigation.jspf"%>
 
 <div class="container">
   <div class="group-header">
@@ -99,4 +99,4 @@ h3 {
 
 </style>
 
-<%@ include file="common/footer.jspf"%>
+<%@ include file="commonCode/footer.jspf"%>
