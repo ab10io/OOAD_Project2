@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Pay the bill.
+	Thanks your billing is completed.
 </body>
 </html>
