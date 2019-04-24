@@ -13,6 +13,7 @@
  Yayy! Your order is Confirmed!</br>
  You ordered Dish 1: ${Quantity1}<br>
  You ordered Dish 2: ${Quantity2}<br>
+ <a href="/getBill" class="btn btn-lg btn-success btn-block" role="button">Get the bill</a>
 </body>
 </html>
 

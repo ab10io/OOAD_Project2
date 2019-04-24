@@ -12,7 +12,6 @@ public class MakeAnOrder {
 	
 	int quantity1 = 0;
 	int quantity2 = 0;
-	int total = 20;
 	
 	private CalculateBill bill = new CalculateBill();
 	
@@ -37,17 +36,18 @@ public class MakeAnOrder {
 	        return "restaurantOrderConfirm";
 	    }
 		
-//		// Calculate the bill.
-//		bill.calculateBill(quantity1,quantity2);
+		// Calculate the bill.
 		
 		// GET billing details page.
 				@RequestMapping(value = "/getBill", method = RequestMethod.GET)
 				public String getBill(ModelMap model) {
-					model.addAttribute("total", total);
+					int total = bill.calculateBill(quantity1,quantity2);
+//					System.out.println(quantity1);
+//					System.out.println(total);
+					model.put("total", total);
 					return "getBill";
 				}
 
-		// GET payBill page.
 				
 		
 }

@@ -20,7 +20,6 @@
 	  <button type="submit" class="btn btn-success my-1">Submit</button>
        </p>
        </form>
-	<a href="/getBill" class="btn btn-lg btn-success btn-block" role="button">Get the bill</a>
  </div>
 
 <%@ include file="commonCode/footer.jspf"%>
